@@ -1,0 +1,7 @@
+name: paweU-BlockCommands
+version: @version@
+main: pl.paweu.blockcommands.BlockCommandsPlugin
+api-version: 1.13
+authors: [paweU]
+description: Plugin blokujacy wykonywanie komend osobom nieuprzywilejowanym
+website: www.paweudev.eu
