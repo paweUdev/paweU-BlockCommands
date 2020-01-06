@@ -22,7 +22,7 @@ public class PlayerCommandPreProcessListener implements Listener {
         String command = event.getMessage();
         if(player.hasPermission(this.settings.permission)) return;
         for(String cmd : this.settings.commands){
-            if(command.contains(cmd)){
+            if(command.startsWith(cmd)){
                 event.setCancelled(true);
                 player.sendMessage(fixColor(this.settings.permissionError.replace("{PERMISSION}", this.settings.permission)));
             }

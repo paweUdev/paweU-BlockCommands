@@ -1,7 +1,7 @@
 permission: 'blockedcommands.bypass'
 permissionError: '&4&lBlad: &cNie posiadasz permisji &8(&6{PERMISSION}&8)'
 commands:
-  - 'plugins'
-  - 'version'
-  - 'ver'
-  - 'pl'
+  - '/plugins'
+  - '/version'
+  - '/ver'
+  - '/pl'
