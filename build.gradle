@@ -6,8 +6,6 @@ version = pluginVersion
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
-libsDirName = 'C:/Users/Win-10/Desktop/SERWER/spigot/plugins'
-
 repositories {
     mavenCentral()
     maven {
