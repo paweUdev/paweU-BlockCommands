@@ -19,12 +19,13 @@ public class PlayerCommandPreProcessListener implements Listener {
     @EventHandler
     public void onCommand(PlayerCommandPreprocessEvent event){
         Player player = event.getPlayer();
-        String command = event.getMessage();
+        String command = event.getMessage().split(" ")[0];
         if(player.hasPermission(this.settings.permission)) return;
         for(String cmd : this.settings.commands){
             if(command.startsWith(cmd)){
                 event.setCancelled(true);
                 player.sendMessage(fixColor(this.settings.permissionError.replace("{PERMISSION}", this.settings.permission)));
+                return;
             }
         }
     }
